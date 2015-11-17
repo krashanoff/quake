@@ -8,9 +8,13 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import org.json.JSONObject;
 
 public class MainActivity extends AppCompatActivity {
+    //jsonobject testing
+    JSONObject object = new JSONObject(sgrJson);
 
+    //real code here
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
