@@ -11,8 +11,6 @@ import android.view.MenuItem;
 import org.json.JSONObject;
 
 public class MainActivity extends AppCompatActivity {
-    //jsonobject testing
-    JSONObject object = new JSONObject(sgrJson);
 
     //real code here
     @Override
