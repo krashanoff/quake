@@ -23,6 +23,11 @@
             android:label="@string/title_activity_second"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
+        <activity
+            android:name=".Page1"
+            android:label="@string/title_activity_page1"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
     </application>
 
 </manifest>
