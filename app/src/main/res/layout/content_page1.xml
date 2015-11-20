@@ -13,10 +13,51 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Hello there, this is where our maps and such will go."
-        android:id="@+id/textView"
+        android:text="Earthquake Preperations"
+        android:id="@+id/preperationsText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Your Area:"
+        android:id="@+id/yourAreaText"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maps"
+        android:id="@+id/mapsButton"
+        android:layout_alignTop="@+id/sheltersButton"
+        android:layout_alignBottom="@+id/sheltersButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shelters"
+        android:id="@+id/sheltersButton"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="241dp" />
+        android:layout_marginBottom="157dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kits"
+        android:id="@+id/kitsButton"
+        android:layout_alignBottom="@+id/sheltersButton"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

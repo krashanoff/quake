@@ -42,6 +42,36 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //Maps button
+        Button maps = (Button) findViewById(R.id.after);
+
+        after.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Maps.class);
+                startActivity(intent);
+            }
+        });
+
+        //After button
+        Button shelters = (Button) findViewById(R.id.after);
+
+        after.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Shelters.class);
+                startActivity(intent);
+            }
+        });
+
+        //After button
+        Button kits = (Button) findViewById(R.id.after);
+
+        after.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Kits.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     @Override
