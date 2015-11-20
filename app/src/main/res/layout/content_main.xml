@@ -14,24 +14,20 @@
         android:layout_height="wrap_content"
         android:text="Before"
         android:id="@+id/before"
-        android:layout_marginLeft="39dp"
-        android:layout_marginStart="39dp"
-        android:layout_alignTop="@+id/after"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:onClick="before"/>
+        android:onClick="before"
+        android:layout_marginTop="77dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="After"
         android:id="@+id/after"
-        android:layout_marginRight="33dp"
-        android:layout_marginEnd="33dp"
-        android:layout_marginTop="193dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:onClick="after"/>
+        android:onClick="after"
+        android:layout_marginBottom="140dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/before"
+        android:layout_alignStart="@+id/before" />
 
 </RelativeLayout>
