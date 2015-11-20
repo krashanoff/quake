@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        /*Transfer this code to corresponding pages
         //Maps button
         Button maps = (Button) findViewById(R.id.after);
 
@@ -71,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        */
 
     }
 
