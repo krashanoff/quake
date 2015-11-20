@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        /*Transfer this code to corresponding pages
+        /*Buttons for each corresponding page.  If we make a tabhost, these buttons will become obselete.  This is why they have been commented out.
         //Maps button
         Button maps = (Button) findViewById(R.id.after);
 

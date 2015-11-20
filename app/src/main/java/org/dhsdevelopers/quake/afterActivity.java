@@ -16,6 +16,10 @@ public class afterActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         setTitle("After");
+        /*
+        TODO:
+        Create a tabhost that contains all or most of the pages that we have created.
+         */
 
     }
 

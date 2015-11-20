@@ -16,6 +16,9 @@ public class beforeActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         setTitle("Before");
+        /*
+        TODO: Create a tabhost to house the pages and classes that we have previously made.
+         */
 
     }
 
