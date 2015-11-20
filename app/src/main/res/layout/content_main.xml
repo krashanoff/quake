@@ -30,4 +30,17 @@
         android:layout_alignLeft="@+id/before"
         android:layout_alignStart="@+id/before" />
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/seismograph"
+        android:layout_below="@+id/before"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/before"
+        android:layout_above="@+id/after"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
 </RelativeLayout>
