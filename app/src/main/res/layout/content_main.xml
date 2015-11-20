@@ -10,22 +10,22 @@
     tools:showIn="@layout/activity_main" tools:context=".MainActivity">
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="125dp"
+        android:layout_height="60dp"
         android:text="Before"
         android:id="@+id/before"
         android:onClick="before"
-        android:layout_marginTop="77dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="125dp"
+        android:layout_height="60dp"
         android:text="After"
         android:id="@+id/after"
         android:onClick="after"
-        android:layout_marginBottom="140dp"
+        android:layout_marginBottom="84dp"
         android:layout_alignParentBottom="true"
         android:layout_alignLeft="@+id/before"
         android:layout_alignStart="@+id/before" />
