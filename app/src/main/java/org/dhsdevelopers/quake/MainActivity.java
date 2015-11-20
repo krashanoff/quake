@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         setTitle("Quake");
         setSupportActionBar(toolbar);
 
-        //Before button [IN NEED OF REPAIRS]
+        //Before button
         Button before = (Button) findViewById(R.id.before);
 
         before.setOnClickListener(new View.OnClickListener() {
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //After button [CONFIRMED TO WORK]
+        //After button
         Button after = (Button) findViewById(R.id.after);
 
         after.setOnClickListener(new View.OnClickListener() {
