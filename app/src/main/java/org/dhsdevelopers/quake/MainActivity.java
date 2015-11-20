@@ -22,23 +22,23 @@ public class MainActivity extends AppCompatActivity {
         setTitle("Quake");
         setSupportActionBar(toolbar);
 
-        //Before button
+        //Before button [IN NEED OF REPAIRS]
         Button before = (Button) findViewById(R.id.before);
 
         before.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, beforeActivity.class);
-                startActivity(intent);
+                Intent before = new Intent(MainActivity.this, beforeActivity.class);
+                startActivity(before);
             }
         });
 
-        //After button
+        //After button [CONFIRMED TO WORK]
         Button after = (Button) findViewById(R.id.after);
 
         after.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, afterActivity.class);
-                startActivity(intent);
+                Intent after = new Intent(MainActivity.this, afterActivity.class);
+                startActivity(after);
             }
         });
 

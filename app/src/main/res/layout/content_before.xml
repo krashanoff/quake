@@ -12,4 +12,13 @@
     tools:context="org.dhsdevelopers.quake.beforeActivity"
     tools:showIn="@layout/activity_before">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="If this appears, it means that the before page is working"
+        android:id="@+id/textView"
+        android:layout_marginTop="107dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
