@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
         after.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Shelters.class);
+                Intent intent = new Intent(MainActivity.this, sheltersActivity.class);
                 startActivity(intent);
             }
         });
@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
 
         after.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Kits.class);
+                Intent intent = new Intent(MainActivity.this, kitsActivity.class);
                 startActivity(intent);
             }
         });

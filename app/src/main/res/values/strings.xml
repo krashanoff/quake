@@ -6,4 +6,6 @@
     <string name="title_activity_before">beforeActivity</string>
     <string name="title_activity_maps">mapsActivity</string>
     <string name="title_activity_shelters">sheltersActivity</string>
+    <string name="title_activity_after">afterActivity</string>
+    <string name="title_activity_kits">kitsActivity</string>
 </resources>
