@@ -131,8 +131,8 @@ public class afterActivity extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            // Show 3 total pages.
-            return 3;
+            // Show 2 total pages.
+            return 2;
         }
 
         @Override
@@ -142,8 +142,6 @@ public class afterActivity extends AppCompatActivity {
                     return "SECTION 1";
                 case 1:
                     return "SECTION 2";
-                case 2:
-                    return "SECTION 3";
             }
             return null;
         }
