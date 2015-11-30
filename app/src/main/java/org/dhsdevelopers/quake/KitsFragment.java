@@ -1,9 +1,11 @@
 package org.dhsdevelopers.quake;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -12,8 +14,10 @@ public class KitsFragment extends Fragment implements CharSequence {
         KitsFragment fragment = new KitsFragment();
         return fragment;
     }
+
     public KitsFragment() {
     }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

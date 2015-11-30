@@ -8,19 +8,10 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="org.dhsdevelopers.quake.beforeActivity$PlaceholderFragment">
 
-    <TextView
-        android:id="@+id/section_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <fragment android:name="org.dhsdevelopers.quake.KitsFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/kits_fragment" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="This is the before page"
-        android:id="@+id/textView"
-        android:layout_below="@+id/section_label"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="117dp" />
 
 </RelativeLayout>

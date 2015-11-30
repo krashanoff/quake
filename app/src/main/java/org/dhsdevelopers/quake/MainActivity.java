@@ -42,38 +42,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        /*Buttons for each corresponding page.  If we make a tabhost, these buttons will become obsolete.  This is why they have been commented out.
-        //Maps button
-        Button maps = (Button) findViewById(R.id.after);
-
-        after.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, mapsActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        //After button
-        Button shelters = (Button) findViewById(R.id.after);
-
-        after.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, sheltersActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        //After button
-        Button kits = (Button) findViewById(R.id.after);
-
-        after.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, kitsActivity.class);
-                startActivity(intent);
-            }
-        });
-        */
-
     }
 
     @Override
