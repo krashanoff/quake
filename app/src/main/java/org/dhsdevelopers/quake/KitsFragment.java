@@ -7,9 +7,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
-/**
- * Created by Leonid on 11/29/2015.
- */
 public class KitsFragment extends Fragment{
     public static KitsFragment newInstance() {
         KitsFragment fragment = new KitsFragment();
