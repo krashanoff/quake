@@ -141,7 +141,7 @@ public class beforeActivity extends AppCompatActivity {
                 case 0:
                     return "SECTION 1";
                 case 1:
-                    return "SECTION 2";
+                    return KitsFragment.newInstance();
             }
             return null;
         }
