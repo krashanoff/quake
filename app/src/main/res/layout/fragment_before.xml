@@ -11,7 +11,8 @@
     <fragment android:name="org.dhsdevelopers.quake.KitsFragment"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:id="@+id/kits_fragment" />
+        android:id="@+id/kits_fragment"
+        tools:layout="@layout/kits_fragment" />
 
 
 </RelativeLayout>
