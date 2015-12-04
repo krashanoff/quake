@@ -2,17 +2,17 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="fill_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_main" tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1">
 
         <TextView
             android:layout_width="wrap_content"
@@ -25,7 +25,7 @@
             android:id="@+id/q"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
-            android:layout_marginLeft="140dp" />
+            android:layout_marginLeft="160dp" />
 
         <Button
             android:layout_width="fill_parent"
@@ -34,13 +34,13 @@
             android:id="@+id/before"
             android:onClick="after"
             android:layout_alignTop="@+id/before"
-            android:layout_marginBottom="3dp"
             android:layout_alignParentBottom="true"
             android:background="#03A9F4"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:layout_weight="0.25" />
 
         <Button
-            android:layout_width="match_parent"
+            android:layout_width="424dp"
             android:layout_height="180dp"
             android:text="What's Next"
             android:id="@+id/after"
@@ -50,7 +50,8 @@
             android:background="#F44336"
             android:fontFamily="Roboto"
             android:fontSize="60dp"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:layout_weight="0.25" />
 
     </LinearLayout>
 
