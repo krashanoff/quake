@@ -1,5 +1,5 @@
 # quake
-Our entry in the Congressional App Challenge, developed on the Android Studio and SDK.
+Our entry in the Congressional App Challenge, developed on Android Studio.
 
 > Developed by:
 * Jessica Gerwin
