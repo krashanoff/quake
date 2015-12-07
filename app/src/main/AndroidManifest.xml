@@ -38,15 +38,6 @@
             android:name=".kitsActivity"
             android:label="@string/title_activity_kits"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".Main2Activity"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".beforeActivityTest"
-            android:label="@string/title_activity_before_activity_test"
-            android:theme="@style/AppTheme.NoActionBar" >
-        </activity>
     </application>
 
 </manifest>
