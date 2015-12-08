@@ -26,18 +26,6 @@
             android:name=".afterActivity"
             android:label="@string/title_activity_after"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".mapsActivity"
-            android:label="@string/title_activity_maps"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".sheltersActivity"
-            android:label="@string/title_activity_shelters"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".kitsActivity"
-            android:label="@string/title_activity_kits"
-            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>
