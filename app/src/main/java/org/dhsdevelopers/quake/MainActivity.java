@@ -69,47 +69,6 @@ public class MainActivity extends AppCompatActivity {
         } catch (JSONException e){
             e.printStackTrace();
         }
-        
-        //HTTP Request Stuff
-        apiButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v){
-                HttpURLConnection connection = null;
-                BufferedReader reader = null;
-
-                try {
-                    URL url = new URL("http://earthquake.usgs.gov/fdsnws/event/1/application.json");
-                    connection = (HttpURLConnection) url.openConnection();
-                    connection.connect();
-
-                    InputStream stream = connection.getInputStream();
-                    reader = new BufferedReader(new InputStreamReader(stream));
-                    StringBuffer buffer = new StringBuffer();
-
-                    String line = "";
-
-                    while((line  = reader.readLine()) != null){
-                        buffer.append(line + "");
-                    }
-
-                } catch (MalformedURLException e){
-                    e.printStackTrace();
-                } catch (IOException e){
-                    e.printStackTrace();
-                } finally {
-                    if(connection != null) {
-                        connection.disconnect();
-                    }
-
-                    try {
-                        if(reader != null){reader.close();}
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-
-                }
-            }
-        });
 
     }
 
@@ -120,6 +79,49 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         protected String doInBackground(URL... params) {
+
+            /*
+            So this is where the URL and API stuff should go!  Please code here if you need to.
+            On a side note, I've left out the buttons and stuff from farther up since I thought they were a little unnecessary.
+            I'm pretty sure that the stuff I left out actually belongs in the Async-onPostExecute task, as it will run on the main thread.
+             */
+            //HTTP Request Stuff
+
+            HttpURLConnection connection = null;
+            BufferedReader reader = null;
+            try {
+                URL url = new URL("http://earthquake.usgs.gov/fdsnws/event/1/application.json");
+                connection = (HttpURLConnection) url.openConnection();
+                connection.connect();
+
+                InputStream stream = connection.getInputStream();
+                reader = new BufferedReader(new InputStreamReader(stream));
+                StringBuffer buffer = new StringBuffer();
+
+                String line = "";
+
+                while((line  = reader.readLine()) != null){
+                    buffer.append(line + "");
+                }
+
+            } catch (MalformedURLException e){
+                e.printStackTrace();
+            } catch (IOException e){
+                e.printStackTrace();
+            } finally {
+                if(connection != null) {
+                    connection.disconnect();
+                }
+
+                try {
+                    if(reader != null){reader.close();}
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+            }
+
+            //This must be called in order for the Async-doInBackground task to complete
             return null;
         }
 
