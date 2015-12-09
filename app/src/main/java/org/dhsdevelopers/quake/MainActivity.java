@@ -1,6 +1,7 @@
 package org.dhsdevelopers.quake;
 
 import android.content.Context;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -110,6 +111,22 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    //START ASYNC PROTOCOL
+
+    //ASYNC CLASS
+    public class JSONTask extends AsyncTask<URL, String, String>{
+
+        @Override
+        protected String doInBackground(URL... params) {
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+        }
     }
 
     @Override
