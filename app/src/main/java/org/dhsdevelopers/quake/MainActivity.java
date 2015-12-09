@@ -113,12 +113,34 @@ public class MainActivity extends AppCompatActivity {
                 */
 
                 //Define strJson as the file retrieved from the HTTP request
-                String strJson = "";
+                String strJson = "{\n" +
+                        "\" +\n" +
+                        " \"   \\\"sys\\\":\\n\" +\n" +
+                        " \"   {\\n\" +\n" +
+                        " \"      \\\"country\\\":\\\"GB\\\",\\n\" +\n" +
+                        "                        \"      \\\"sunrise\\\":1381107633,\\n\" +\n" +
+                        "                        \"      \\\"sunset\\\":1381149604\\n\" +\n" +
+                        "                        \"   },\\n\" +\n" +
+                        "                        \"   \\\"weather\\\":[\\n\" +\n" +
+                        "                        \"   {\\n\" +\n" +
+                        "                        \"      \\\"id\\\":711,\\n\" +\n" +
+                        "                        \"      \\\"main\\\":\\\"Smoke\\\",\\n\" +\n" +
+                        "                        \"      \\\"description\\\":\\\"smoke\\\",\\n\" +\n" +
+                        "                        \"      \\\"icon\\\":\\\"50n\\\"\\n\" +\n" +
+                        "                        \"   }\\n\" +\n" +
+                        "                        \"],\\n\" +\n" +
+                        "                        \"\\\"main\\\":\\n\" +\n" +
+                        "                        \"   {\\n\" +\n" +
+                        "                        \"      \\\"temp\\\":304.15,\\n\" +\n" +
+                        "                        \"      \\\"pressure\\\":1009,\\n\" +\n" +
+                        "                        \"   }\\n\" +\n" +
+                        "                        \"}";
                 try {
                     JSONObject jsonObject = new JSONObject(strJson);
                 } catch (JSONException e){
                     e.printStackTrace();
                 }
+
             }
 
             //This must be called in order for the Async-doInBackground task to complete
