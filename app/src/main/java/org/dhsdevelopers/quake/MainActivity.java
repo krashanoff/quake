@@ -56,20 +56,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //API STUFF
-
-        //JSON Parsing
-        TextView apiTest = (TextView) findViewById(R.id.apiTest);
-        Button apiButton = (Button) findViewById(R.id.apiButton);
-
-        //Define strJson as the file retrieved from the HTTP request
-        String strJson = "";
-        try {
-            JSONObject jsonObject = new JSONObject(strJson);
-        } catch (JSONException e){
-            e.printStackTrace();
-        }
-
     }
 
     //START ASYNC PROTOCOL
@@ -119,6 +105,20 @@ public class MainActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
 
+                /*
+                JSON Parsing
+                (I commented this out because I thought that it was not needed in the background thread)
+                TextView apiTest = (TextView) findViewById(R.id.apiTest);
+                Button apiButton = (Button) findViewById(R.id.apiButton);
+                */
+
+                //Define strJson as the file retrieved from the HTTP request
+                String strJson = "";
+                try {
+                    JSONObject jsonObject = new JSONObject(strJson);
+                } catch (JSONException e){
+                    e.printStackTrace();
+                }
             }
 
             //This must be called in order for the Async-doInBackground task to complete
@@ -127,6 +127,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(String s) {
+            //Return null does not need to be called here for the task to complete
             super.onPostExecute(s);
         }
     }
