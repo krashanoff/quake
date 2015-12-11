@@ -129,9 +129,9 @@ public class MainActivity extends AppCompatActivity {
                 JSONObject parentObject = new JSONObject(finalJson);
                 JSONArray parentArray = parentObject.getJSONArray("features");
 
-                JSONObject finalObject = new parentArray.getJSONObject(0);
+                //JSONObject finalObject = new parentArray.getJSONObject(0);
 
-                int magnitude = finalObject.getInt("mag");
+                //int magnitude = finalObject.getInt("mag");
 
                 return buffer.toString();
 
