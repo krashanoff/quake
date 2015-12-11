@@ -16,6 +16,7 @@ import android.view.MenuItem;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.json.*;
 
 //IO and HTTP Imports
 import java.io.BufferedReader;
@@ -31,6 +32,13 @@ import android.widget.TextView;
 import android.content.Intent;
 
 public class MainActivity extends AppCompatActivity {
+
+    private TextView apiTest;
+
+    //Parameters for API Data
+    String dataParameterStart = "2015-12-10";
+    int dataParameterMinMagnitude = 3;
+    int dataParameterMaxMagnitude = 9;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +68,19 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        apiTest = (TextView)findViewById(R.id.apiTest);
+        Button apiButton = (Button) findViewById(R.id.apiButton);
+
+
+
+        apiButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                //Fill in parameter variables after testing is done
+                new JSONTask().execute("http://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2015-12-10&minmagnitude=3&maxmagnitude=9");
+            }
+        });
+
     }
 
     //Before Method
@@ -67,21 +88,13 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    TextView apiTest = (TextView) findViewById(R.id.apiTest);
-    Button apiButton = (Button) findViewById(R.id.apiButton);
-
-    //Parameters for API Data
-    String dataParameterStart = "2015-12-10";
-    int dataParameterMinMagnitude = 3;
-    int dataParameterMaxMagnitude = 9;
-
     //START ASYNC PROTOCOL
 
     //ASYNC CLASS
-    public class JSONTask extends AsyncTask<URL, String, String>{
+    public class JSONTask extends AsyncTask<String, String, String>{
 
         @Override
-        protected String doInBackground(URL... params) {
+        protected String doInBackground(String... params) {
 
             /*
             So this is where the URL and API stuff should go!  Please code here if you need to.
@@ -92,10 +105,11 @@ public class MainActivity extends AppCompatActivity {
 
             HttpURLConnection connection = null;
             BufferedReader reader = null;
+
             try {
                 //Leave out end time because default is present time
-                URL url = new URL("http://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=" + dataParameterStart +
-                        "&minmagnitude=" + dataParameterMinMagnitude + "&maxmagnitude=" + dataParameterMaxMagnitude);
+                URL url = new URL(params[0]);
+
                 connection = (HttpURLConnection) url.openConnection();
                 connection.connect();
 
@@ -109,11 +123,23 @@ public class MainActivity extends AppCompatActivity {
                     buffer.append(line + "");
                 }
 
+                //If HTTP request is succesful return string
+
+                String finalJson = buffer.toString();
+                JSONObject parentObject = new JSONObject(finalJson);
+                JSONArray parentArray = parentObject.getJSONArray("features");
+
+                JSONObject finalObject = new parentArray.getJSONObject(0);
+
+                int magnitude = finalObject.getInt("mag");
+
                 return buffer.toString();
 
             } catch (MalformedURLException e){
                 e.printStackTrace();
             } catch (IOException e){
+                e.printStackTrace();
+            } catch (JSONException e) {
                 e.printStackTrace();
             } finally {
                 if(connection != null) {
@@ -138,18 +164,19 @@ public class MainActivity extends AppCompatActivity {
 
             }
 
-            //This must be called in order for the Async-doInBackground task to complete
+            //If not succesful return null
             return null;
         }
 
         @Override
         //This is the main thread
-        protected void onPostExecute(String s) {
+        protected void onPostExecute(String result) {
             //Return null does not need to be called here for the task to complete
-            apiTest.setText(s);
-            super.onPostExecute(s);
+            apiTest.setText(result);
+            super.onPostExecute(result);
         }
     }
+    //END OF ASYNC TASK
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
