@@ -109,6 +109,8 @@ public class MainActivity extends AppCompatActivity {
                     buffer.append(line + "");
                 }
 
+                return buffer.toString();
+
             } catch (MalformedURLException e){
                 e.printStackTrace();
             } catch (IOException e){
@@ -141,8 +143,10 @@ public class MainActivity extends AppCompatActivity {
         }
 
         @Override
+        //This is the main thread
         protected void onPostExecute(String s) {
             //Return null does not need to be called here for the task to complete
+            apiTest.setText(s);
             super.onPostExecute(s);
         }
     }
