@@ -1,5 +1,6 @@
 package org.dhsdevelopers.quake;
 
+//GUI Imports
 import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -11,10 +12,12 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+//JSON Parsing Imports
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+//IO and HTTP Imports
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -22,6 +25,7 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.*;
 
+//Widget Imports
 import android.widget.Button;
 import android.widget.TextView;
 import android.content.Intent;
@@ -58,6 +62,19 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //Before Method
+    public void before(View view){
+
+    }
+
+    TextView apiTest = (TextView) findViewById(R.id.apiTest);
+    Button apiButton = (Button) findViewById(R.id.apiButton);
+
+    //Parameters for API Data
+    String dataParameterStart = "2015-12-10";
+    int dataParameterMinMagnitude = 3;
+    int dataParameterMaxMagnitude = 9;
+
     //START ASYNC PROTOCOL
 
     //ASYNC CLASS
@@ -76,7 +93,9 @@ public class MainActivity extends AppCompatActivity {
             HttpURLConnection connection = null;
             BufferedReader reader = null;
             try {
-                URL url = new URL("http://earthquake.usgs.gov/fdsnws/event/1/application.json");
+                //Leave out end time because default is present time
+                URL url = new URL("http://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=" + dataParameterStart +
+                        "&minmagnitude=" + dataParameterMinMagnitude + "&maxmagnitude=" + dataParameterMaxMagnitude);
                 connection = (HttpURLConnection) url.openConnection();
                 connection.connect();
 
@@ -105,36 +124,10 @@ public class MainActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
 
-                /*
-                JSON Parsing
-                (I commented this out because I thought that it was not needed in the background thread)
-                TextView apiTest = (TextView) findViewById(R.id.apiTest);
-                Button apiButton = (Button) findViewById(R.id.apiButton);
-                */
+                //JSON Parsing
 
                 //Define strJson as the file retrieved from the HTTP request
-                String strJson = "{\n" +
-                        "\" +\n" +
-                        " \"   \\\"sys\\\":\\n\" +\n" +
-                        " \"   {\\n\" +\n" +
-                        " \"      \\\"country\\\":\\\"GB\\\",\\n\" +\n" +
-                        "                        \"      \\\"sunrise\\\":1381107633,\\n\" +\n" +
-                        "                        \"      \\\"sunset\\\":1381149604\\n\" +\n" +
-                        "                        \"   },\\n\" +\n" +
-                        "                        \"   \\\"weather\\\":[\\n\" +\n" +
-                        "                        \"   {\\n\" +\n" +
-                        "                        \"      \\\"id\\\":711,\\n\" +\n" +
-                        "                        \"      \\\"main\\\":\\\"Smoke\\\",\\n\" +\n" +
-                        "                        \"      \\\"description\\\":\\\"smoke\\\",\\n\" +\n" +
-                        "                        \"      \\\"icon\\\":\\\"50n\\\"\\n\" +\n" +
-                        "                        \"   }\\n\" +\n" +
-                        "                        \"],\\n\" +\n" +
-                        "                        \"\\\"main\\\":\\n\" +\n" +
-                        "                        \"   {\\n\" +\n" +
-                        "                        \"      \\\"temp\\\":304.15,\\n\" +\n" +
-                        "                        \"      \\\"pressure\\\":1009,\\n\" +\n" +
-                        "                        \"   }\\n\" +\n" +
-                        "                        \"}";
+                String strJson = "";
                 try {
                     JSONObject jsonObject = new JSONObject(strJson);
                 } catch (JSONException e){
@@ -161,8 +154,4 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-    //Before Method
-    public void before(View view){
-
-    }
 }
