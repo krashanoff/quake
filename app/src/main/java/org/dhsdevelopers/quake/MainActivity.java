@@ -68,18 +68,18 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        apiTest = (TextView)findViewById(R.id.apiTest);
+        apiTest = (TextView)findViewById(R.id.apiText);
         Button apiButton = (Button) findViewById(R.id.apiButton);
 
 
 
-        apiButton.setOnClickListener(new View.OnClickListener(){
+        /* apiButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 //Fill in parameter variables after testing is done
                 new JSONTask().execute("http://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2015-12-10&minmagnitude=3&maxmagnitude=9");
             }
-        });
+        }); */
 
     }
 

@@ -17,6 +17,7 @@ public class afterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_after);
+        setTitle("What's Next");
 
         //create toolbar
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);

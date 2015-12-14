@@ -9,14 +9,13 @@
         android:fontFamily="Roboto"
         android:text="Content"
         android:textSize="30dp"
-        android:id="@+id/apiTest"/>
+        android:id="@+id/apiText"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/apiButton"
         android:text="Update"
-        android:textSize="15dp"
-        android:onClick="apiButton"/>
+        android:textSize="15dp"/>
 
 </LinearLayout>
