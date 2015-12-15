@@ -1,48 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+    android:layout_height="match_parent"
+    android:layout_marginTop="60dp">
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="270dp"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:text="Maps"
-            android:background="#03A9F4"/>
+            android:background="#2196F3"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textColor="#FFFF"
+            android:id="@+id/maps"
+            android:fontFamily="Roboto"/>
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="270dp"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:text="Shelters"
-            android:background="#F44336"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+            android:background="#FF9800"
+            android:textSize="20dp"
+            android:textColor="#FFFF"
+            android:id="@+id/shelters"
+            android:fontFamily="Roboto"/>
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="270dp"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
             android:layout_weight="1"
+            android:layout_gravity="center"
             android:text="Medical"
-            android:background="#F44336"/>
+            android:background="#009688"
+            android:textSize="20dp"
+            android:textColor="#FFFF"
+            android:id="@+id/medical"
+            android:fontFamily="Roboto"/>
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="270dp"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
             android:layout_weight="1"
             android:text="Friends"
-            android:background="#03A9F4"/>
+            android:background="#F44336"
+            android:textSize="20dp"
+            android:textColor="#FFFF"
+            android:id="@+id/friends"
+            android:fontFamily="Roboto"/>
 
-    </LinearLayout>
 
 </LinearLayout>
+
+
+
+

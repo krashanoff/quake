@@ -20,22 +20,24 @@
             android:textSize="130dp"
             android:fontFamily="Roboto"
             android:id="@+id/q"
-            android:layout_marginTop="80dp"
-            android:layout_marginLeft="160dp"
-            android:layout_weight=".25" />
+            android:layout_marginTop="70dp"
+            android:layout_gravity="center"
+            android:layout_weight=".33"/>
 
         <Button
             android:layout_width="fill_parent"
-            android:layout_height="170dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
             android:text="Prepare Yourself"
             android:textSize="20dp"
+            android:fontFamily="Roboto"
             android:id="@+id/before"
             android:onClick="after"
             android:layout_alignTop="@+id/before"
             android:layout_alignParentBottom="true"
-            android:background="#03A9F4"
-            android:layout_centerHorizontal="true"
-            android:layout_weight=".25" />
+            android:background="#FF5722"
+            android:layout_weight=".33"
+            android:textColor="#FFFF"/>
 
         <Button
             android:layout_width="fill_parent"
@@ -46,10 +48,11 @@
             android:onClick="after"
             android:layout_alignTop="@+id/before"
             android:layout_alignParentBottom="true"
-            android:background="#F44336"
+            android:background="#673AB7"
             android:fontFamily="Roboto"
-            android:layout_centerHorizontal="true"
-            android:layout_weight=".25" />
+            android:layout_gravity="center"
+            android:layout_weight=".33"
+            android:textColor="#FFFF"/>
 
     </LinearLayout>
 

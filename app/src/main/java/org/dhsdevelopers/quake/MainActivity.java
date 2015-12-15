@@ -16,7 +16,6 @@ import android.view.MenuItem;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.json.*;
 
 //IO and HTTP Imports
 import java.io.BufferedReader;
@@ -24,12 +23,16 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
-import java.net.*;
+import java.net.URL;
+import java.net.MalformedURLException;
 
 //Widget Imports
 import android.widget.Button;
 import android.widget.TextView;
 import android.content.Intent;
+
+//Location Imports
+import android.location.Location;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -39,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
     String dataParameterStart = "2015-12-10";
     int dataParameterMinMagnitude = 3;
     int dataParameterMaxMagnitude = 9;
+    int intLocation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +51,9 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setTitle("Quake");
         setSupportActionBar(toolbar);
+
+        //Call the method that get location (make sure to optimize this later)
+        //requestLocationUpdates(locationListener);
 
         //Before button
         Button before = (Button) findViewById(R.id.before);
@@ -81,6 +88,11 @@ public class MainActivity extends AppCompatActivity {
             }
         }); */
 
+    }
+
+    public int aquireLocation(Location location){
+        //Define intLocation as the location
+        return intLocation;
     }
 
     //Before Method

@@ -8,6 +8,7 @@ import android.support.v4.view.ViewPager;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 
 public class afterActivity extends AppCompatActivity {
 
@@ -22,6 +23,12 @@ public class afterActivity extends AppCompatActivity {
         //create toolbar
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        Button maps = (Button) findViewById(R.id.maps);
+        Button shelters = (Button) findViewById(R.id.shelters);
+        Button friends = (Button) findViewById(R.id.friends);
+        Button medical = (Button) findViewById(R.id.medical);
+
 
     }
 
