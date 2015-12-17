@@ -16,7 +16,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Q"
-            android:textColor="#1A237E"
+            android:textColor="#000"
             android:textSize="130dp"
             android:fontFamily="Roboto"
             android:id="@+id/q"
@@ -35,7 +35,7 @@
             android:onClick="after"
             android:layout_alignTop="@+id/before"
             android:layout_alignParentBottom="true"
-            android:background="#FF5722"
+            android:background="#673AB7"
             android:layout_weight=".33"
             android:textColor="#FFFF"/>
 
@@ -48,7 +48,7 @@
             android:onClick="after"
             android:layout_alignTop="@+id/before"
             android:layout_alignParentBottom="true"
-            android:background="#673AB7"
+            android:background="#2196F3"
             android:fontFamily="Roboto"
             android:layout_gravity="center"
             android:layout_weight=".33"
