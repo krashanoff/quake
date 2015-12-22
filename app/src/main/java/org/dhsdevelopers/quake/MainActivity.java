@@ -4,8 +4,6 @@ package org.dhsdevelopers.quake;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -28,9 +26,6 @@ import java.net.MalformedURLException;
 import android.widget.Button;
 import android.widget.TextView;
 import android.content.Intent;
-
-//Location Imports
-import android.location.Location;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -73,28 +68,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        apiTest = (TextView)findViewById(R.id.apiText);
-        Button apiButton = (Button) findViewById(R.id.apiButton);
-
-
-
-        /* apiButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                //Fill in parameter variables after testing is done
-                new JSONTask().execute("http://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2015-12-10&minmagnitude=3&maxmagnitude=9");
-            }
-        }); */
-
-    }
-
-    public int aquireLocation(Location location){
-        //Define intLocation as the location
-        return intLocation;
-    }
-
-    //Before Method
-    public void before(View view){
+        //USE BUTTON TO START ASYNC TASK
 
     }
 

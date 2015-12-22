@@ -1,24 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="@dimen/appbar_padding_top">
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="@dimen/margin_top">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="Roboto"
-        android:text="Content"
-        android:textSize="30dp"
-        android:id="@+id/apiText"
-        android:layout_gravity="center"/>
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:text="Kits"
+            android:background="#2196F3"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textColor="#FFFF"
+            android:id="@+id/kits"
+            android:fontFamily="Roboto"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/apiButton"
-        android:text="Update"
-        android:textSize="15dp"
-        android:layout_gravity="center"/>
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:text="Shelters"
+            android:background="#FF9800"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textColor="#FFFF"
+            android:id="@+id/shelters"
+            android:fontFamily="Roboto"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:text="Local Data"
+            android:background="#009688"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textColor="#FFFF"
+            android:id="@+id/data"
+            android:fontFamily="Roboto"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:text="Supplies"
+            android:background="#F44336"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textColor="#FFFF"
+            android:id="@+id/supplies"
+            android:fontFamily="Roboto"/>
 
 </LinearLayout>

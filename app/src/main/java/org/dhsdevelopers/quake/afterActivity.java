@@ -25,19 +25,10 @@ public class afterActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        Button maps = (Button) findViewById(R.id.maps);
-        Button shelters = (Button) findViewById(R.id.shelters);
+        Button noise = (Button) findViewById(R.id.noise);
+        Button flashlight = (Button) findViewById(R.id.flashlight);
         Button friends = (Button) findViewById(R.id.friends);
         Button medical = (Button) findViewById(R.id.medical);
-
-        maps.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent before = new Intent(afterActivity.this, MapsActivity.class);
-                startActivity(before);
-            }
-        });
-
 
     }
 
