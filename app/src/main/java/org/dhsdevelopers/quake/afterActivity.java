@@ -1,19 +1,16 @@
 package org.dhsdevelopers.quake;
 
 import android.content.Intent;
-
+import android.hardware.Camera;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.support.v4.view.ViewPager;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
 public class afterActivity extends AppCompatActivity {
 
-    private ViewPager mViewPager;
+    private Camera camera;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +26,19 @@ public class afterActivity extends AppCompatActivity {
         Button flashlight = (Button) findViewById(R.id.flashlight);
         Button friends = (Button) findViewById(R.id.friends);
         Button medical = (Button) findViewById(R.id.medical);
+
+        camera = Camera.open();
+
+
+        flashlight.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Camera.Parameters cameraParams = camera.getParameters();
+                cameraParams.setFlashMode(Camera.Parameters.FLASH_MODE_TORCH);
+                camera.setParameters(cameraParams);
+                camera.startPreview();
+            }
+        });
 
     }
 

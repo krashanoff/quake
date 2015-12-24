@@ -42,8 +42,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setTitle("Quake");
         setSupportActionBar(toolbar);
+        setTitle("Quake");
 
         //Call the method that get location (make sure to optimize this later)
         //requestLocationUpdates(locationListener);
