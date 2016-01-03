@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:fitsSystemWindows="true"
-    tools:context="org.dhsdevelopers.quake.beforeActivity"
-    android:orientation="vertical">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="quake.dhsdevelopers.org.quake.BeforeActivity">
 
-    <android.support.design.widget.AppBarLayout android:layout_height="wrap_content"
-        android:layout_width="match_parent">
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="70dp" />
 
-        <android.support.v7.widget.Toolbar android:id="@+id/toolbar"
-            android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"/>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="70dp" />
 
-    </android.support.design.widget.AppBarLayout>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="70dp" />
 
-    <include layout="@layout/content_before" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="70dp" />
 
-</RelativeLayout>
+</LinearLayout>

@@ -1,18 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:fitsSystemWindows="true"
-    tools:context="org.dhsdevelopers.quake.MainActivity">
+    android:layout_height="match_parent"
+    android:orientation="vertical" tools:context=".MainActivity">
 
-    <android.support.design.widget.AppBarLayout android:layout_height="wrap_content"
-        android:layout_width="match_parent">
+    <TextView 
+        android:text="Q" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="150dp"
+        android:layout_gravity="center"
+        android:textColor="@color/black"/>
+    
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_weight=".3"
+        android:text="Prepare Yourself"
+        android:textSize="20dp"
+        android:id="@+id/beforeButton"
+        android:onClick="before"/>
 
-        <android.support.v7.widget.Toolbar android:id="@+id/toolbar"
-            android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"/>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_weight=".3"
+        android:text="What's Next"
+        android:textSize="20dp"
+        android:id="@+id/afterButton"
+        android:onClick="after"/>
 
-    </android.support.design.widget.AppBarLayout>
-
-    <include layout="@layout/content_main" />
-
-</RelativeLayout>
+</LinearLayout>
