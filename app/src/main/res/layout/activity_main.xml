@@ -20,7 +20,8 @@
         android:text="Prepare Yourself"
         android:textSize="20dp"
         android:id="@+id/beforeButton"
-        android:onClick="before"/>
+        android:onClick="before"
+        android:background="#FF5722"/>
 
     <Button
         android:layout_width="fill_parent"
@@ -30,6 +31,7 @@
         android:text="What's Next"
         android:textSize="20dp"
         android:id="@+id/afterButton"
-        android:onClick="after"/>
+        android:onClick="after"
+        android:background="#2196F3"/>
 
 </LinearLayout>
