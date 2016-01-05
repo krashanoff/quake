@@ -23,6 +23,12 @@
         </activity>
         <activity android:name=".AfterActivity" >
         </activity>
+        <activity android:name=".LocalData" >
+        </activity>
+        <activity android:name=".SheltersActivity" >
+        </activity>
+        <activity android:name=".KitsActivity" >
+        </activity>
     </application>
 
 </manifest>
