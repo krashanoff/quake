@@ -10,7 +10,7 @@
         android:layout_height="120dp"
         android:text="Flashlight"
         android:textSize="20dp"
-        android:onClick="flashlight"
+        android:id="@+id/flashlight"
         android:background="#03A9F4"/>
 
     <Button
