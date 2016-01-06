@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="quake.dhsdevelopers.org.quake" >
 
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.CAMERA" />
@@ -22,8 +23,6 @@
         <activity android:name=".BeforeActivity" >
         </activity>
         <activity android:name=".AfterActivity" >
-        </activity>
-        <activity android:name=".LocalData" >
         </activity>
         <activity android:name=".SheltersActivity" >
         </activity>

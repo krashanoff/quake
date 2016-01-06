@@ -11,7 +11,7 @@ public class BeforeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_before);
-        setTitle("Prepare Yourself");
+        setTitle("Get Prepared");
     }
 
     public void kits(View v){

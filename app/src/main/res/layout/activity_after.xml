@@ -7,11 +7,19 @@
 
     <Button
         android:layout_width="fill_parent"
-        android:layout_height="120dp" />
+        android:layout_height="120dp"
+        android:text="Flashlight"
+        android:textSize="20dp"
+        android:onClick="flashlight"
+        android:background="#03A9F4"/>
 
     <Button
         android:layout_width="fill_parent"
-        android:layout_height="120dp" />
+        android:layout_height="120dp"
+        android:text="Noise"
+        android:textSize="20dp"
+        android:onClick="noise"
+        android:background="#FF5722"/>
 
     <Button
         android:layout_width="fill_parent"
