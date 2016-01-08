@@ -5,10 +5,10 @@
     android:orientation="vertical" tools:context=".MainActivity">
 
     <TextView 
-        android:text="Q" 
+        android:text="@string/first_letter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="150dp"
+        android:textSize="150sp"
         android:layout_gravity="center"
         android:textColor="@color/black"/>
     
@@ -17,8 +17,8 @@
         android:layout_height="100dp"
         android:layout_gravity="center"
         android:layout_weight=".3"
-        android:text="Get Prepared"
-        android:textSize="20dp"
+        android:text="@string/before_title"
+        android:textSize="20sp"
         android:id="@+id/beforeButton"
         android:onClick="before"
         android:background="#FF5722"/>
@@ -28,8 +28,8 @@
         android:layout_height="100dp"
         android:layout_gravity="center"
         android:layout_weight=".3"
-        android:text="What's Next"
-        android:textSize="20dp"
+        android:text="@string/after_title"
+        android:textSize="20sp"
         android:id="@+id/afterButton"
         android:onClick="after"
         android:background="#2196F3"/>

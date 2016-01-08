@@ -8,16 +8,16 @@
     <Button
         android:layout_width="fill_parent"
         android:layout_height="120dp"
-        android:text="Flashlight"
-        android:textSize="20dp"
+        android:text="@string/flashlight"
+        android:textSize="20sp"
         android:id="@+id/flashlight"
         android:background="#03A9F4"/>
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="120dp"
-        android:text="Noise"
-        android:textSize="20dp"
+        android:text="@string/noise"
+        android:textSize="20sp"
         android:onClick="noise"
         android:background="#FF5722"/>
 

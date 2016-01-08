@@ -8,24 +8,24 @@
     <Button
         android:layout_width="fill_parent"
         android:layout_height="120dp"
-        android:text="Kits"
-        android:textSize="20dp"
+        android:text="@string/kits"
+        android:textSize="20sp"
         android:onClick="kits"
         android:background="#03A9F4"/>
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="120dp"
-        android:text="Shelters"
-        android:textSize="20dp"
+        android:text="@string/shelters"
+        android:textSize="20sp"
         android:onClick="shelters"
         android:background="#FF5722"/>
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="120dp"
-        android:text="Local Data"
-        android:textSize="20dp"
+        android:text="@string/local_data"
+        android:textSize="20sp"
         android:background="#4CAF50"/>
 
     <Button

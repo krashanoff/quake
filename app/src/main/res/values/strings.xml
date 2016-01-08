@@ -1,3 +1,18 @@
 <resources>
+    <!-- General -->
     <string name="app_name">Quake</string>
+    <string name="first_letter">Q</string>
+    <string name="before_title">Get Prepared</string>
+    <string name="after_title">What's Next</string>
+    <!-- Before Page Strings -->
+    <string name="kits">Kits</string>
+    <string name="shelters">Shelters</string>
+    <string name="local_data">Local Data</string>
+    <!-- After Page Strings -->
+    <string name="flashlight">Flashlight</string>
+    <string name="noise">Noise</string>
+    <!-- Kits Strings -->
+    <string name="kits_basic">Basic</string>
+    <string name="kits_medium">Medium</string>
+    <string name="kits_ultimate">Ultimate</string>
 </resources>
