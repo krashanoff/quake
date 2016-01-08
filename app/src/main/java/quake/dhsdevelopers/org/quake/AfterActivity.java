@@ -21,7 +21,7 @@ public class AfterActivity extends AppCompatActivity {
         flashlight.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startCamera();
-                turnOnFlash();
+                toggleFlash();
             }
         });
     }
@@ -46,7 +46,7 @@ public class AfterActivity extends AppCompatActivity {
         }
     }
 
-    private void turnOnFlash() {
+    private void toggleFlash() {
         if (!torchOn) {
             if (mCamera == null || mParameters == null) {
                 return;
@@ -60,11 +60,7 @@ public class AfterActivity extends AppCompatActivity {
             torchOn = true;
 
         }
-
-    }
-
-    private void turnOffFlash() {
-        if (torchOn) {
+        else {
             if (mCamera == null || mParameters == null) {
                 return;
             }
@@ -74,10 +70,8 @@ public class AfterActivity extends AppCompatActivity {
             mCamera.setParameters(mParameters);
             mCamera.stopPreview();
             torchOn = false;
-
-
         }
-    }
 
+    }
 
 }
