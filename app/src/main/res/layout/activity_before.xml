@@ -7,7 +7,7 @@
 
     <Button
         android:layout_width="fill_parent"
-        android:layout_height="120dp"
+        android:layout_height="@dimen/button_height"
         android:text="@string/kits"
         android:textSize="20sp"
         android:onClick="kits"
@@ -15,7 +15,7 @@
 
     <Button
         android:layout_width="fill_parent"
-        android:layout_height="120dp"
+        android:layout_height="@dimen/button_height"
         android:text="@string/shelters"
         android:textSize="20sp"
         android:onClick="shelters"
@@ -23,13 +23,13 @@
 
     <Button
         android:layout_width="fill_parent"
-        android:layout_height="120dp"
+        android:layout_height="@dimen/button_height"
         android:text="@string/local_data"
         android:textSize="20sp"
         android:background="#4CAF50"/>
 
     <Button
         android:layout_width="fill_parent"
-        android:layout_height="120dp" />
+        android:layout_height="@dimen/button_height" />
 
 </LinearLayout>
