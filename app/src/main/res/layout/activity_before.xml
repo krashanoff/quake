@@ -30,6 +30,9 @@
 
     <Button
         android:layout_width="fill_parent"
-        android:layout_height="@dimen/button_height" />
+        android:layout_height="@dimen/button_height"
+        android:text="Basics"
+        android:textSize="20sp"
+        android:background="#009688"/>
 
 </LinearLayout>

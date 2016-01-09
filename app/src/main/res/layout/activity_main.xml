@@ -2,8 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" tools:context=".MainActivity"
-    android:background="@color/background_tint">
+    android:orientation="vertical" tools:context=".MainActivity">
 
     <TextView 
         android:text="@string/first_letter"
@@ -11,7 +10,7 @@
         android:layout_height="wrap_content"
         android:textSize="150sp"
         android:layout_gravity="center"
-        android:textColor="@color/black"/>
+        android:textColor="@color/q"/>
     
     <Button
         android:layout_width="fill_parent"
@@ -33,6 +32,6 @@
         android:textSize="20sp"
         android:id="@+id/afterButton"
         android:onClick="after"
-        android:background="#2196F3"/>
+        android:background="#4CAF50"/>
 
 </LinearLayout>
