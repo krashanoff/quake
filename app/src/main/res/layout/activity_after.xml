@@ -26,6 +26,7 @@
         android:layout_height="@dimen/button_height"
         android:text="Medical"
         android:textSize="20sp"
+        android:onClick="medical"
         android:background="#4CAF50"/>
 
     <Button
@@ -33,6 +34,7 @@
         android:layout_height="@dimen/button_height"
         android:text="Basics"
         android:textSize="20sp"
+        android:onClick="basics"
         android:background="#009688"/>
 
 </LinearLayout>

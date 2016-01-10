@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.CAMERA" />
+
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
 
@@ -29,6 +30,10 @@
         <activity android:name=".SheltersActivity" >
         </activity>
         <activity android:name=".KitsActivity" >
+        </activity>
+        <activity android:name=".MedicalActivity" >
+        </activity>
+        <activity android:name=".BasicsActivity" >
         </activity>
     </application>
 

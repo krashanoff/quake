@@ -27,7 +27,16 @@ public class AfterActivity extends AppCompatActivity {
     }
 
     public void noise(View v){
-        Intent intent = new Intent(this, Noise.class);
+        System.out.println("You clicked noise!");
+    }
+
+    public void medical(View v){
+        Intent intent = new Intent(this, MedicalActivity.class);
+        startActivity(intent);
+    }
+
+    public void basics(View v){
+        Intent intent = new Intent(this, BasicsActivity.class);
         startActivity(intent);
     }
 

@@ -24,6 +24,11 @@ public class BeforeActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void basics(View v){
+        Intent intent = new Intent(this, BasicsActivity.class);
+        startActivity(intent);
+    }
+
     /*locationManager = (LocationManager) getSystemService(LOCATION_SERVICE); 
 
     locationListener = new LocationListener(){ 
