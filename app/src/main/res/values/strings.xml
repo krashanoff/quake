@@ -15,4 +15,6 @@
     <string name="kits_basic">Basic</string>
     <string name="kits_medium">Medium</string>
     <string name="kits_ultimate">Ultimate</string>
+    <!-- BASIC LONG STRINGS -->
+    <string name="basic_long1">If you are in a moving vehicle, stop as quickly and safely as possible and stay in the vehicle. Avoid stopping near or under buildings, trees, overpasses, and utility wires. Proceed cautiously once the earthquake has stopped. Avoid roads, bridges, or ramps that the earthquake may have damaged.</string>
 </resources>

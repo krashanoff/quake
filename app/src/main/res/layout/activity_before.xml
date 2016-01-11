@@ -11,7 +11,8 @@
         android:text="@string/kits"
         android:textSize="20sp"
         android:onClick="kits"
-        android:background="#03A9F4"/>
+        android:background="#03A9F4"
+        android:layout_weight=".25"/>
 
     <Button
         android:layout_width="fill_parent"
@@ -19,14 +20,16 @@
         android:text="@string/shelters"
         android:textSize="20sp"
         android:onClick="shelters"
-        android:background="#FF5722"/>
+        android:background="#FF5722"
+        android:layout_weight=".25"/>
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="@dimen/button_height"
         android:text="@string/local_data"
         android:textSize="20sp"
-        android:background="#4CAF50"/>
+        android:background="#4CAF50"
+        android:layout_weight=".25"/>
 
     <Button
         android:layout_width="fill_parent"
@@ -34,6 +37,7 @@
         android:text="Basics"
         android:textSize="20sp"
         android:onClick="basics"
-        android:background="#009688"/>
+        android:background="#009688"
+        android:layout_weight=".25"/>
 
 </LinearLayout>
