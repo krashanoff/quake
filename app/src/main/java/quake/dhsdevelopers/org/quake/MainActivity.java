@@ -23,6 +23,8 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.MalformedURLException;
 
+//NOTE: We need to move the ASYNC and JSON parsing to it's own class
+
 public class MainActivity extends AppCompatActivity {
 
     /* Parameters for API Data String dataParameterStart = "2015-12-10";
