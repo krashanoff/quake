@@ -19,7 +19,7 @@
         android:layout_height="@dimen/button_height"
         android:text="@string/noise"
         android:textSize="20sp"
-        android:onClick="noise"
+        android:id="@+id/noise"
         android:background="#FF5722"
         android:layout_weight=".25"/>
 

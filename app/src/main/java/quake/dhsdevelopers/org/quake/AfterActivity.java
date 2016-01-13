@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.hardware.Camera;
 import android.hardware.Camera.Parameters;
 import android.widget.Button;
+import android.media.MediaPlayer;
 
 public class AfterActivity extends AppCompatActivity {
 
@@ -24,10 +25,23 @@ public class AfterActivity extends AppCompatActivity {
                 toggleFlash();
             }
         });
-    }
 
-    public void noise(View v){
-        System.out.println("You clicked noise!");
+        final MediaPlayer mp = MediaPlayer.create(this, R.raw.noise);
+        final Button noise = (Button) findViewById(R.id.noise);
+
+        noise.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!mp.isPlaying()){
+                    mp.setLooping(true);
+                    mp.start();
+
+                }else{
+                    mp.stop();
+                }
+
+            }
+        });
     }
 
     public void medical(View v){
@@ -82,5 +96,6 @@ public class AfterActivity extends AppCompatActivity {
         }
 
     }
+
 
 }
