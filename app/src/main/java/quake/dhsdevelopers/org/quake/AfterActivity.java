@@ -35,9 +35,8 @@ public class AfterActivity extends AppCompatActivity {
                 if(!mp.isPlaying()){
                     mp.setLooping(true);
                     mp.start();
-
-                }else{
-                    mp.stop();
+                }else if(mp.isPlaying()){
+                    mp.pause();
                 }
 
             }

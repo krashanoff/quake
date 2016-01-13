@@ -3,14 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" android:orientation="vertical" tools:context=".MainActivity">
 
-    <TextView 
-        android:text="@string/first_letter"
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="150sp"
+        android:background="@drawable/test"
         android:layout_gravity="center"
-        android:textColor="@color/q"/>
-    
+        android:layout_weight=".4"/>
+
     <Button
         android:layout_width="fill_parent"
         android:layout_height="100dp"
