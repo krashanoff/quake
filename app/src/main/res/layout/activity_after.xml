@@ -9,34 +9,34 @@
         android:layout_width="fill_parent"
         android:layout_height="@dimen/button_height"
         android:text="@string/flashlight"
-        android:textSize="20sp"
+        android:textSize="@dimen/button_font_size"
         android:id="@+id/flashlight"
-        android:background="#03A9F4"
+        android:background="#42A5F5"
         android:layout_weight=".25"/>
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="@dimen/button_height"
         android:text="@string/noise"
-        android:textSize="20sp"
+        android:textSize="@dimen/button_font_size"
         android:id="@+id/noise"
-        android:background="#FF5722"
+        android:background="#FF7043"
         android:layout_weight=".25"/>
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="@dimen/button_height"
         android:text="Medical"
-        android:textSize="20sp"
+        android:textSize="@dimen/button_font_size"
         android:onClick="medical"
-        android:background="#4CAF50"
+        android:background="#EC407A"
         android:layout_weight=".25"/>
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="@dimen/button_height"
         android:text="Basics"
-        android:textSize="20sp"
+        android:textSize="@dimen/button_font_size"
         android:onClick="basics"
         android:background="#009688"
         android:layout_weight=".25"/>

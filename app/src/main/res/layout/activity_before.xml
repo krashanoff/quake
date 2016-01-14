@@ -9,7 +9,7 @@
         android:layout_width="fill_parent"
         android:layout_height="@dimen/button_height"
         android:text="@string/kits"
-        android:textSize="20sp"
+        android:textSize="@dimen/button_font_size"
         android:onClick="kits"
         android:background="#42A5F5"
         android:layout_weight=".25"/>
@@ -18,7 +18,7 @@
         android:layout_width="fill_parent"
         android:layout_height="@dimen/button_height"
         android:text="@string/shelters"
-        android:textSize="20sp"
+        android:textSize="@dimen/button_font_size"
         android:onClick="shelters"
         android:background="#FF7043"
         android:layout_weight=".25"/>
@@ -27,7 +27,7 @@
         android:layout_width="fill_parent"
         android:layout_height="@dimen/button_height"
         android:text="@string/local_data"
-        android:textSize="20sp"
+        android:textSize="@dimen/button_font_size"
         android:background="#EC407A"
         android:layout_weight=".25"/>
 
@@ -35,7 +35,7 @@
         android:layout_width="fill_parent"
         android:layout_height="@dimen/button_height"
         android:text="Basics"
-        android:textSize="20sp"
+        android:textSize="@dimen/button_font_size"
         android:onClick="basics"
         android:background="#009688"
         android:layout_weight=".25"/>

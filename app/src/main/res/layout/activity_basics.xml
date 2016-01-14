@@ -16,13 +16,13 @@
 
     <ScrollView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="400dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/basic_text"
-            android:textSize="35sp" />
+            android:textSize="25sp" />
 
     </ScrollView>
 
