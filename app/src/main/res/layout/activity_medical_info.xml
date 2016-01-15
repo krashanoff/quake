@@ -4,4 +4,9 @@
     android:layout_height="match_parent"
     tools:context="quake.dhsdevelopers.org.quake.MedicalInfoActivity">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/medicalInfo"/>
+
 </LinearLayout>
