@@ -28,6 +28,7 @@
         android:layout_height="@dimen/button_height"
         android:text="@string/local_data"
         android:textSize="@dimen/button_font_size"
+        android:onClick="local"
         android:background="#EC407A"
         android:layout_weight=".25"/>
 

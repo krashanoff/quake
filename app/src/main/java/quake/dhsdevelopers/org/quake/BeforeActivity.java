@@ -14,6 +14,11 @@ public class BeforeActivity extends AppCompatActivity {
         setTitle("Get Prepared");
     }
 
+    public void local(View v){
+        Intent intent = new Intent(this, LocalActivity.class);
+        startActivity(intent);
+    }
+
     public void kits(View v){
         Intent intent = new Intent(this, KitsActivity.class);
         startActivity(intent);

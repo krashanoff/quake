@@ -35,6 +35,8 @@
         </activity>
         <activity android:name=".BasicsActivity" >
         </activity>
+        <activity android:name=".LocalActivity" >
+        </activity>
     </application>
 
 </manifest>
