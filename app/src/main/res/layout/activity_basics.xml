@@ -3,8 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingLeft="@dimen/padding_basic"
-    android:paddingRight="@dimen/padding_basic"
     tools:context="quake.dhsdevelopers.org.quake.BasicsActivity">
 
     <TextView
@@ -14,16 +12,45 @@
         android:textSize="40sp"
         android:textColor="@color/black"/>
 
-    <ScrollView
+    <TextView
         android:layout_width="wrap_content"
-        android:layout_height="400dp">
+        android:layout_height="wrap_content"
+        android:text="In Your house"
+        android:textColor="@color/black"
+        android:textSize="@dimen/button_font_size" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_weight=".2"
+        android:layout_marginBottom="10dp">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/basic_text"
             android:textSize="25sp" />
 
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="In Your Car"
+        android:textColor="@color/black"
+        android:textSize="@dimen/button_font_size"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_weight=".2"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/basic_text"
+            android:textSize="25sp"/>
     </ScrollView>
 
 </LinearLayout>
