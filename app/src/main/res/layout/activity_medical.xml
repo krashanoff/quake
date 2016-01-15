@@ -8,7 +8,8 @@
     <Button
         android:layout_width="fill_parent"
         android:layout_height="@dimen/button_height"
-        android:text="Broken Bones"/>
+        android:text="Broken Bones"
+        android:onClick="bones"/>
 
     <Button
         android:layout_width="fill_parent"

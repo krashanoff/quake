@@ -3,7 +3,7 @@ package quake.dhsdevelopers.org.quake;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.webkit.WebView;
+import android.view.View;
 
 public class MedicalActivity extends AppCompatActivity {
 
@@ -17,7 +17,8 @@ public class MedicalActivity extends AppCompatActivity {
 
     }
 
-    public void bones(){
+    public void bones(View v){
+        medicalThing = 1;
         Intent intent = new Intent(this, MedicalInfoActivity.class);
         startActivity(intent);
     }

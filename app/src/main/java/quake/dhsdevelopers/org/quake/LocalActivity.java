@@ -59,7 +59,7 @@ public class LocalActivity extends AppCompatActivity {
         } 
     };  */
 
-     public class JSONTask extends AsyncTask<String, String, String>{  
+    /*  public class JSONTask extends AsyncTask<String, String, String>{  
 
         protected String doInBackground(String... params) {  
             //HTTP Request Stuff  
@@ -128,6 +128,6 @@ public class LocalActivity extends AppCompatActivity {
             super.onPostExecute(result); 
 
         } 
-    } 
+    }  */
 
 }
