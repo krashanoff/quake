@@ -22,4 +22,16 @@ public class MedicalActivity extends AppCompatActivity {
         Intent intent = new Intent(this, MedicalInfoActivity.class);
         startActivity(intent);
     }
+
+    public void cuts(View v){
+        medicalThing = 2;
+        Intent intent = new Intent(this, MedicalInfoActivity.class);
+        startActivity(intent);
+    }
+
+    public void spine(View v){
+        medicalThing = 3;
+        Intent intent = new Intent(this, MedicalInfoActivity.class);
+        startActivity(intent);
+    }
 }

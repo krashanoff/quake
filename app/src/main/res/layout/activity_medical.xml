@@ -14,11 +14,13 @@
     <Button
         android:layout_width="fill_parent"
         android:layout_height="@dimen/button_height"
-        android:text="Cuts"/>
+        android:text="Cuts"
+        android:onClick="cuts"/>
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="@dimen/button_height"
-        android:text="Neck/Spine Injuries"/>
+        android:text="Neck/Spine Injuries"
+        android:onClick="spine"/>
 
 </LinearLayout>
