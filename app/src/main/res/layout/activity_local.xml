@@ -4,4 +4,15 @@
     android:layout_height="match_parent"
     tools:context="quake.dhsdevelopers.org.quake.LocalActivity">
 
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/apiText"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="Get Update"
+        android:id="@+id/apiButton"/>
+
 </LinearLayout>
