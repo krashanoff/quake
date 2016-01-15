@@ -15,9 +15,20 @@
     <string name="kits_basic">Basic</string>
     <string name="kits_medium">Medium</string>
     <string name="kits_ultimate">Ultimate</string>
-    <!-- BASIC LONG STRINGS -->
+    <!-- LONG STRINGS -->
     <string name="basic_text">If you are in a moving vehicle, stop as quickly and safely as possible
         and stay in the vehicle. Avoid stopping near or under buildings, trees, overpasses, and
         utility wires. Proceed cautiously once the earthquake has stopped. Avoid roads, bridges, or
         ramps that the earthquake may have damaged.</string>
+    <string name="health_impale1">Stabilize the object.
+        This can be done a number of ways, the most popular being wrapping the area around the wound so the object will not wiggle.
+        However there are alternatives to this, and if you cannot find a bandage stabilizing the object with your other hand works as well.</string>
+    <string name="health_impale2">CLEAN THE WOUND.
+        This is a critical step in caring for a wound of this nature, as leaving a potentially foreign object within contact of the bloodstream will often lead to infection.</string>
+    <string name="health_impale3">wrap to prevent blood loss and apply pressure AROUND the wound.
+        This is where people make the most mistakes since applying pressure directly to the wound may inflict a considerable amount of pain.</string>
+    <string name="health_impale4">Additionally, DO NOT REMOVE THE OBJECT.
+        Removing an impaled object from the wound may inflict even more blood loss and pain due to the nature of the object.
+        If you are sure that it is a flat object with no edges for skin to catch on, DO NOT REMOVE IT, this is because no matter how “sure” you think you are about an object it is always a better idea to let medical professionals take care of the wound.</string>
+    <string name="health_impale5">Monitor yourself for symptoms of shock, these may include vomiting nausea or clammy and cold skin.</string>
 </resources>
