@@ -11,7 +11,7 @@
         android:text="@string/kits_basic"
         android:textSize="@dimen/button_font_size"
         android:onClick="basic"
-        android:background="#03A9F4"
+        android:background="#42A5F5"
         android:layout_weight=".3"/>
 
     <Button
@@ -20,7 +20,7 @@
         android:text="@string/kits_medium"
         android:textSize="@dimen/button_font_size"
         android:onClick="medium"
-        android:background="#4CAF50"
+        android:background="#FF7043"
         android:layout_weight=".3"/>
 
     <Button
@@ -29,7 +29,7 @@
         android:text="@string/kits_ultimate"
         android:textSize="@dimen/button_font_size"
         android:onClick="ultimate"
-        android:background="#FF5722"
+        android:background="#EC407A"
         android:layout_weight=".3"/>
 
 </LinearLayout>
