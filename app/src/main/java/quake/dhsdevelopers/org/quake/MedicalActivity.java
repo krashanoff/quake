@@ -9,6 +9,10 @@ public class MedicalActivity extends AppCompatActivity {
 
     public int medicalThing;
 
+    public int getMedicalThing(){
+        return this.medicalThing;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

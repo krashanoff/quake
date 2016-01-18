@@ -15,7 +15,7 @@ public class MedicalInfoActivity extends AppCompatActivity {
         TextView medicalInfo = (TextView) findViewById(R.id.medicalInfo);
         MedicalActivity obj = new MedicalActivity();
 
-        if(obj.medicalThing == 1){
+        if(obj.getMedicalThing() == 1){
             System.out.print("Test");
             medicalInfo.setText("One");
         }else if(obj.medicalThing == 2){
