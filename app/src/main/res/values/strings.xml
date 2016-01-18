@@ -16,10 +16,17 @@
     <string name="kits_medium">Medium</string>
     <string name="kits_ultimate">Ultimate</string>
     <!-- LONG STRINGS -->
-    <string name="basic_text">If you are in a moving vehicle, stop as quickly and safely as possible
+    <string name="basic_car">If you are in a moving vehicle, stop as quickly and safely as possible
         and stay in the vehicle. Avoid stopping near or under buildings, trees, overpasses, and
         utility wires. Proceed cautiously once the earthquake has stopped. Avoid roads, bridges, or
         ramps that the earthquake may have damaged.</string>
+    <string name="basic_home">Look around places where you spend time.  Identify safe places such as under a sturdy piece of furniture or against an interior wall in your home, office or school so that when the shaking starts you drop to the ground, cover your head and neck with your arms, and if a safer place is nearby, crawl to it and hold on.\n
+        Practice how to “Drop, Cover, and Hold On!”\n
+        To react quickly you must practice often. You may only have seconds to protect yourself in an earthquake.\n
+        Before an earthquake occurs, secure items that could fall and cause injuries (e.g., bookshelves, mirrors, light fixtures).\n
+        Store critical supplies (e.g., water, medication) and documents.\n
+        Plan how you will communicate with family members, including multiple methods by making a family emergency communication plan.\n
+        When choosing your home or business, check if the building is earthquake resistant per local building codes.</string>
     <string name="health_impale1">Stabilize the object.
         This can be done a number of ways, the most popular being wrapping the area around the wound so the object will not wiggle.
         However there are alternatives to this, and if you cannot find a bandage stabilizing the object with your other hand works as well.</string>

@@ -16,7 +16,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="In Your house"
-        android:textColor="@color/black"
         android:textSize="@dimen/button_font_size" />
 
     <ScrollView
@@ -28,8 +27,9 @@
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="@string/basic_text"
-            android:textSize="25sp" />
+            android:text="@string/basic_home"
+            android:textSize="25sp"
+            android:textColor="#000000" />
 
     </ScrollView>
 
@@ -37,7 +37,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="In Your Car"
-        android:textColor="@color/black"
         android:textSize="@dimen/button_font_size"/>
 
     <ScrollView
@@ -49,8 +48,9 @@
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="@string/basic_text"
-            android:textSize="25sp"/>
+            android:text="@string/basic_car"
+            android:textSize="25sp"
+            android:textColor="#000000" />
     </ScrollView>
 
 </LinearLayout>
