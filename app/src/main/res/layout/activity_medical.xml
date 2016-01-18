@@ -9,18 +9,24 @@
         android:layout_width="fill_parent"
         android:layout_height="@dimen/button_height"
         android:text="Broken Bones"
-        android:onClick="bones"/>
+        android:onClick="bones"
+        android:layout_weight=".3"
+        android:background="#03A9F4"/>
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="@dimen/button_height"
         android:text="Cuts"
-        android:onClick="cuts"/>
+        android:onClick="cuts"
+        android:layout_weight=".3"
+        android:background="#FF5722"/>
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="@dimen/button_height"
         android:text="Neck/Spine Injuries"
-        android:onClick="spine"/>
+        android:onClick="spine"
+        android:layout_weight=".3"
+        android:background="#EC407A"/>
 
 </LinearLayout>
