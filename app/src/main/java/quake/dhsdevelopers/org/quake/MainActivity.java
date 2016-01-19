@@ -27,6 +27,8 @@ import java.net.MalformedURLException;
 
 public class MainActivity extends AppCompatActivity {
 
+    //TODO Create higher es image for home page
+
     /* Parameters for API Data String dataParameterStart = "2015-12-10";
     //int dataParameterMinMagnitude = 3; 
     //int dataParameterMaxMagnitude = 9;
@@ -75,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
                 while((line  = reader.readLine()) != null){ 
                     buffer.append(line + ""); 
                 }  
-                //If HTTP request is succesful return string  
+                //If HTTP request is successful return string  
                 String finalJson = buffer.toString(); 
 
                 JSONObject parentObject = new JSONObject(finalJson); 
@@ -109,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
                 }  
             }  
 
-            //If not succesful return null 
+            //If not successful return null 
             return null; 
         }  
 
