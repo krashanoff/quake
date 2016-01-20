@@ -4,6 +4,7 @@
     <string name="first_letter">Q</string>
     <string name="before_title">Get Prepared</string>
     <string name="after_title">What\'s Next</string>
+    <string name="filler">FILLER TEXT</string>
     <!-- Before Page Strings -->
     <string name="kits">Kits</string>
     <string name="shelters">Shelters</string>
@@ -38,6 +39,7 @@
         This is where people make the most mistakes since applying pressure directly to the wound may inflict a considerable amount of pain.\n
         Additionally, DO NOT REMOVE THE OBJECT.\n
         Removing an impaled object from the wound may inflict even more blood loss and pain due to the nature of the object.\n
-        If you are sure that it is a flat object with no edges for skin to catch on, DO NOT REMOVE IT, this is because no matter how “sure” you think you are about an object it is always a better idea to let medical professionals take care of the wound.\n
+        If you are sure that it is a flat object with no edges for skin to catch on, DO NOT REMOVE IT,\n
+        this is because no matter how “sure” you think you are about an object it is always a better idea to let medical professionals take care of the wound.\n
         Monitor yourself for symptoms of shock, these may include vomiting nausea or clammy and cold skin.</string>
 </resources>

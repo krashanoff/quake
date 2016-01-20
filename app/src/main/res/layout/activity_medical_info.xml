@@ -20,7 +20,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/health_impale"
+            android:id="@+id/medicalText"
             android:textSize="20dp"/>
 
     </ScrollView>
