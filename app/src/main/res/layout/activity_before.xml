@@ -17,9 +17,9 @@
     <Button
         android:layout_width="fill_parent"
         android:layout_height="@dimen/button_height"
-        android:text="@string/shelters"
+        android:text="Medical"
         android:textSize="@dimen/button_font_size"
-        android:onClick="shelters"
+        android:onClick="medical"
         android:background="#FF7043"
         android:layout_weight=".25"/>
 

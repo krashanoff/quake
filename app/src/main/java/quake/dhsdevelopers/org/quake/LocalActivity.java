@@ -71,17 +71,15 @@ public class LocalActivity extends AppCompatActivity {
 
         locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 0, locationListener);
 
+        JSONTask task = new JSONTask();
+        task.doInBackground();
+
     }
 
     public void makeUseOfNewLocation(Location location) {
         latitude = location.getLatitude();
         longitude = location.getLongitude();
     }
-
-    public void apiButton(View v){
-        System.out.println("You clicked button");
-    }
-
 
 
     public class JSONTask extends AsyncTask<String, String, String>{
@@ -97,7 +95,7 @@ public class LocalActivity extends AppCompatActivity {
 
             try {
                 //Leave out end time because default is present time
-                URL url = new URL("http://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2016-01-01&endtime=2016-01-19&latitude=40&longitude=120&maxradius=10");
+                URL url = new URL("\"http://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2016-01-01&endtime=2016-01-19&latitude=40&longitude=120&maxradius=10\"");
 
                 connection = (HttpURLConnection) url.openConnection();
                 connection.connect();
@@ -114,6 +112,7 @@ public class LocalActivity extends AppCompatActivity {
 
                 //If HTTP request is succesful return string
                 String finalJson = buffer.toString();
+                System.out.println(finalJson);
 
                 JSONObject parentObject = new JSONObject(finalJson);
                 JSONArray parentArray = parentObject.getJSONArray("features");
@@ -122,7 +121,6 @@ public class LocalActivity extends AppCompatActivity {
                 //int magnitude = finalObject.getInt("mag");
 
                 return buffer.toString();
-
 
 
             } catch (MalformedURLException e){
@@ -154,6 +152,7 @@ public class LocalActivity extends AppCompatActivity {
 
             }
 
+
             //If not succesful return null
             return null;
         }
@@ -162,7 +161,7 @@ public class LocalActivity extends AppCompatActivity {
         //This is the main thread
         protected void onPostExecute(String result) {
             //Return null does not need to be called here for the task to complete
-            System.out.println(result);
+            apiText.setText(result);
             super.onPostExecute(result);
         }
     }

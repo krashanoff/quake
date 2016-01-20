@@ -24,8 +24,8 @@ public class BeforeActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void shelters(View v){
-        Intent intent = new Intent(this, SheltersActivity.class);
+    public void medical(View v){
+        Intent intent = new Intent(this, MedicalActivity.class);
         startActivity(intent);
     }
 
