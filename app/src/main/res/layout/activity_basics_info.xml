@@ -7,24 +7,24 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="quake.dhsdevelopers.org.quake.BasicsInfo">
+    tools:context=".BasicsInfo">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="50sp"
         android:text="The Basics"
-        android:textSize="45sp"/>
+        android:textSize="45sp"
+        android:textColor="@color/black"/>
 
     <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight=".2"
-        android:layout_marginTop="50sp">
+        android:layout_marginTop="60dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/black"
             android:textSize="25sp"
             android:id="@+id/basics_tv"/>
 

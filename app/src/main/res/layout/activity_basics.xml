@@ -8,6 +8,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="256dp"
+        android:layout_weight=".5"
         android:background="#42A5F5"
         android:textSize="27sp"
         android:onClick="at_home"
@@ -16,6 +17,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="255dp"
+        android:layout_weight=".5"
         android:background="#009688"
         android:textSize="27sp"
         android:onClick="in_car"
