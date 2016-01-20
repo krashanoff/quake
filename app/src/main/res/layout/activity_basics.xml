@@ -5,52 +5,20 @@
     android:orientation="vertical"
     tools:context=".BasicsActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="The Basics"
-        android:textSize="40sp"
-        android:textColor="@color/black"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:background="#42A5F5"
+        android:textSize="27sp"
+        android:onClick="at_home"
+        android:text="At Home"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="In Your house"
-        android:textSize="@dimen/button_font_size"
-        android:textColor="@color/black"/>
-
-    <ScrollView
-        android:layout_width="fill_parent"
-        android:layout_height="300dp"
-        android:layout_weight=".2"
-        android:layout_marginBottom="10dp">
-
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/basic_home"
-            android:textSize="25sp" />
-
-    </ScrollView>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="In Your Car"
-        android:textSize="@dimen/button_font_size"
-        android:textColor="@color/black"/>
-
-    <ScrollView
-        android:layout_width="fill_parent"
-        android:layout_height="300dp"
-        android:layout_weight=".2"
-        android:layout_marginBottom="15dp">
-
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/basic_car"
-            android:textSize="25sp" />
-    </ScrollView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="255dp"
+        android:background="#009688"
+        android:textSize="27sp"
+        android:onClick="in_car"
+        android:text="In The Car"/>
 
 </LinearLayout>

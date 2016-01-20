@@ -33,5 +33,4 @@ public class BeforeActivity extends AppCompatActivity {
         Intent intent = new Intent(this, BasicsActivity.class);
         startActivity(intent);
     }
-
 }
