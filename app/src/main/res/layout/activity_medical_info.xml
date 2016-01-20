@@ -2,26 +2,28 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="quake.dhsdevelopers.org.quake.MedicalInfoActivity">
+    android:orientation="vertical"
+    tools:context=".MedicalInfoActivity">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/medicalInfo" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/medicalInfo"
+        android:text="Medical Info"
+        android:textSize="@dimen/button_font_size"/>
+
 
     <ScrollView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
+        android:layout_height="200dp">
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="@string/health_impale1"
+            android:textSize="20dp"/>
 
     </ScrollView>
+
 
 </LinearLayout>
