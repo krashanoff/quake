@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="quake.dhsdevelopers.org.quake.BasicsActivity">
+    tools:context=".BasicsActivity">
 
     <TextView
         android:layout_width="wrap_content"
@@ -16,7 +16,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="In Your house"
-        android:textSize="@dimen/button_font_size" />
+        android:textSize="@dimen/button_font_size"
+        android:textColor="@color/black"/>
 
     <ScrollView
         android:layout_width="fill_parent"
@@ -28,8 +29,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/basic_home"
-            android:textSize="25sp"
-            android:textColor="#000000" />
+            android:textSize="25sp" />
 
     </ScrollView>
 
@@ -37,7 +37,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="In Your Car"
-        android:textSize="@dimen/button_font_size"/>
+        android:textSize="@dimen/button_font_size"
+        android:textColor="@color/black"/>
 
     <ScrollView
         android:layout_width="fill_parent"
@@ -49,8 +50,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/basic_car"
-            android:textSize="25sp"
-            android:textColor="#000000" />
+            android:textSize="25sp" />
     </ScrollView>
 
 </LinearLayout>
