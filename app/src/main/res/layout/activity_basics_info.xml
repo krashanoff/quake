@@ -14,7 +14,8 @@
         android:layout_height="50sp"
         android:text="The Basics"
         android:textSize="45sp"
-        android:textColor="@color/black"/>
+        android:textColor="@color/black"
+        android:id="@+id/basics"/>
 
     <ScrollView
         android:layout_width="wrap_content"

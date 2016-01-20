@@ -8,7 +8,7 @@
 
     <TextView
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="wrap_content"
         android:id="@+id/apiText"/>
 
     <Button
@@ -16,6 +16,7 @@
         android:layout_height="wrap_content"
         android:text="Get Update"
         android:background="@color/colorPrimary"
-        android:id="@+id/apiButton"/>
+        android:id="@+id/apiButton"
+        android:onClick="apiButton"/>
 
 </LinearLayout>

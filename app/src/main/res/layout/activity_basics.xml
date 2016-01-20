@@ -10,7 +10,7 @@
         android:layout_height="256dp"
         android:layout_weight=".5"
         android:background="#42A5F5"
-        android:textSize="27sp"
+        android:textSize="@dimen/button_font_size"
         android:onClick="at_home"
         android:text="At Home"/>
 
@@ -19,7 +19,7 @@
         android:layout_height="255dp"
         android:layout_weight=".5"
         android:background="#009688"
-        android:textSize="27sp"
+        android:textSize="@dimen/button_font_size"
         android:onClick="in_car"
         android:text="In The Car"/>
 
