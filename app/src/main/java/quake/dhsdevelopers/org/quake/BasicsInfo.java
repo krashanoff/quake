@@ -17,11 +17,11 @@ public class BasicsInfo extends AppCompatActivity {
 
         if(BasicsActivity.basicInfoDisplay == 1){
             setTitle("Home");
-            basic.setText("Home");
+            basic.setText("At Home");
             basicTv.setText(getApplicationContext().getResources().getString(R.string.basic_home));
         } else if(BasicsActivity.basicInfoDisplay == 2){
             setTitle("Car");
-            basic.setText("Home");
+            basic.setText("In the Car");
             basicTv.setText(getApplicationContext().getResources().getString(R.string.basic_car));
         } else{
 
