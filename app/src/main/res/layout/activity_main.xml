@@ -5,9 +5,9 @@
     android:background="#FFCDD2">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/test"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:src="@drawable/home_logo"
         android:layout_gravity="center"
         android:layout_weight=".3"/>
 
