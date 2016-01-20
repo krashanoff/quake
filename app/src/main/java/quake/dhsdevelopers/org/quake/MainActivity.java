@@ -27,7 +27,7 @@ import java.net.MalformedURLException;
 
 public class MainActivity extends AppCompatActivity {
 
-    //TODO Create higher es image for home page
+    //TODO Create higher res image for home page
 
     /* Parameters for API Data String dataParameterStart = "2015-12-10";
     //int dataParameterMinMagnitude = 3; 
