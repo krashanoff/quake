@@ -20,7 +20,7 @@
         android:textSize="@dimen/button_font_size"
         android:id="@+id/beforeButton"
         android:onClick="before"
-        android:background="#EF5350"/>
+        android:background="#03A9F4"/>
 
     <Button
         android:layout_width="fill_parent"
@@ -31,6 +31,6 @@
         android:textSize="@dimen/button_font_size"
         android:id="@+id/afterButton"
         android:onClick="after"
-        android:background="#03A9F4"/>
+        android:background="#F44336"/>
 
 </LinearLayout>

@@ -11,7 +11,7 @@
         android:text="@string/kits"
         android:textSize="@dimen/button_font_size"
         android:onClick="kits"
-        android:background="#42A5F5"
+        android:background="#B3E5FC"
         android:layout_weight=".25"/>
 
     <Button
@@ -20,7 +20,7 @@
         android:text="Medical"
         android:textSize="@dimen/button_font_size"
         android:onClick="medical"
-        android:background="#FF7043"
+        android:background="#29B6F6"
         android:layout_weight=".25"/>
 
     <Button
@@ -29,7 +29,7 @@
         android:text="@string/local_data"
         android:textSize="@dimen/button_font_size"
         android:onClick="local"
-        android:background="#EC407A"
+        android:background="#0288D1"
         android:layout_weight=".25"/>
 
     <Button
@@ -38,7 +38,7 @@
         android:text="Basics"
         android:textSize="@dimen/button_font_size"
         android:onClick="basics"
-        android:background="#009688"
+        android:background="#01579B"
         android:layout_weight=".25"/>
 
 </LinearLayout>

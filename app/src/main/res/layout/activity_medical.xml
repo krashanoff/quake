@@ -11,7 +11,7 @@
         android:text="Broken Bones"
         android:onClick="bones"
         android:layout_weight=".3"
-        android:background="#03A9F4"
+        android:background="#FFCDD2"
         android:textSize="@dimen/button_font_size"/>
 
     <Button
@@ -20,7 +20,7 @@
         android:text="Cuts"
         android:onClick="cuts"
         android:layout_weight=".3"
-        android:background="#FF5722"
+        android:background="#EF5350"
         android:textSize="@dimen/button_font_size"/>
 
     <Button
@@ -29,7 +29,7 @@
         android:text="Neck/Spine Injuries"
         android:onClick="spine"
         android:layout_weight=".3"
-        android:background="#EC407A"
+        android:background="#D32F2F"
         android:textSize="@dimen/button_font_size"/>
 
 </LinearLayout>
