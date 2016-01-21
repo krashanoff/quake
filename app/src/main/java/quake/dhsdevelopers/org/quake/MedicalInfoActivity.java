@@ -19,18 +19,18 @@ public class MedicalInfoActivity extends AppCompatActivity {
         if(MedicalActivity.medicalChoice == 1) {
             setTitle("Broken Bones");
             medicalInfo.setText("Bones");
-            medicalText.setText(getApplicationContext().getResources().getString(R.string.filler));
+            medicalText.setText(getApplicationContext().getResources().getString(R.string.health_bones));
 
         }else if(MedicalActivity.medicalChoice == 2){
-            setTitle("Cuts");
-            medicalInfo.setText("Cuts");
+            setTitle("Foreign Objects");
+            medicalInfo.setText("Foreign Objects");
             medicalText.setText(getApplicationContext().getResources().getString(R.string.health_impale));
         }
 
         else if(MedicalActivity.medicalChoice == 3){
             setTitle("Neck/Spine Injuries");
             medicalInfo.setText("Neck/Spine");
-            medicalText.setText(getApplicationContext().getResources().getString(R.string.filler));
+            medicalText.setText(getApplicationContext().getResources().getString(R.string.health_spine));
         }
     }
 }
