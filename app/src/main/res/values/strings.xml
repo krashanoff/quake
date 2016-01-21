@@ -23,7 +23,7 @@
         ramps that the earthquake may have damaged.</string>
     <string name="basic_home">Look around places where you spend time.\n
         Identify safe places such as under a sturdy piece of furniture or against an interior wall in your home, office or school so that when the shaking starts you drop to the ground, cover your head and neck with your arms, and if a safer place is nearby, crawl to it and hold on.\n
-        Practice how to “Drop, Cover, and Hold On!”\n
+        Practice how to \“Drop, Cover, and Hold On!”\n
         To react quickly you must practice often. You may only have seconds to protect yourself in an earthquake.\n
         Before an earthquake occurs, secure items that could fall and cause injuries (e.g., bookshelves, mirrors, light fixtures).
         Store critical supplies (e.g., water, medication) and documents.\n
@@ -40,7 +40,7 @@
         Additionally, DO NOT REMOVE THE OBJECT.\n
         Removing an impaled object from the wound may inflict even more blood loss and pain due to the nature of the object.\n
         If you are sure that it is a flat object with no edges for skin to catch on, DO NOT REMOVE IT,\n
-        this is because no matter how “sure” you think you are about an object it is always a better idea to let medical professionals take care of the wound.\n
+        this is because no matter how \“sure\” you think you are about an object it is always a better idea to let medical professionals take care of the wound.\n
         Monitor yourself for symptoms of shock, these may include vomiting nausea or clammy and cold skin.</string>
     <string name="health_spine">
         Immobilize the head or neck or back, depending on the area of injury\n
@@ -55,7 +55,8 @@
         Stop any bleeding, then determine what kind of splint is needed, if medical help is not nearby.\n
         Soft splints are for breaks that are some degree of mobile, it will not hurt as much to wear, however the limb will be able to move more than a rigid splint; possibly producing pain.\n
         A good way to make a soft splint is by taking a soft object (possibly a pillow) and using it for cushioning around a standard anatomical splint.\n
-        Rigid splints are good for breaks that cannot afford to be moved much.  They will be slightly more painful to wear than a soft splint, however they will reduce movement and ensure the bone will not undergo any pain\n
-        Should medical care not be within reach, continue to check on the wound's healing periodically and maintain focus.\n
+        Rigid splints are good for breaks that cannot afford to be moved much. They will be slightly more painful to wear than a soft splint, however they will reduce movement and ensure the bone will not undergo any pain\n
+        Should medical care not be within reach, continue to check on the wound\'s healing periodically and maintain focus.\n
     </string>
+    <string name="api_feature">This feature has not yet been added but it will display information about recent earthquakes earthquakes near you.</string>
 </resources>

@@ -71,8 +71,8 @@ public class LocalActivity extends AppCompatActivity {
 
         locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 0, locationListener);
 
-        JSONTask task = new JSONTask();
-        task.doInBackground();
+        //JSONTask task = new JSONTask();
+        //task.doInBackground();
 
     }
 
@@ -82,7 +82,7 @@ public class LocalActivity extends AppCompatActivity {
     }
 
 
-    public class JSONTask extends AsyncTask<String, String, String>{
+     /*public class JSONTask extends AsyncTask<String, String, String>{
 
         @Override
         protected String doInBackground(String... params) {
@@ -164,7 +164,7 @@ public class LocalActivity extends AppCompatActivity {
             apiText.setText(result);
             super.onPostExecute(result);
         }
-    }
+    } */
 
 }
 
